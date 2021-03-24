@@ -1,0 +1,125 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+.chat__header{
+    background-color: #2a2f32;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #30383d;
+}
+
+.chat__headerInfo{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.chat__headerRight {
+    filter: invert(1);
+}
+
+.chat__headerInfo > h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.chat__headerInfo > p{
+    font-size: 14px;
+    color: gray;
+}
+
+.chat__body{
+    flex: 1;    /* take up all the posible width position */
+    background-image: url('https://fsa.zobj.net/crop.php?r=SRKeeSpnn8YXEr5YHYRAhQuPohQ5hSmiJsyBpIip50o5TidkOSBx7DTMVW0J_x8GhypvV9cEeGp2XK7w6iGpqYdug-PhhVuUDF4Ok-_bEGYBnzBt4SCxOovNrnrUUwT57kTriIddr-HdPOsO');
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+}
+
+/* for chrome, safari and opera */
+.chat__body::-webkit-scrollbar {
+    display: none;
+}
+  
+.chat__body {
+    -ms-overflow-style: none; /* Ie and  Firefox*/
+    scrollbar-width: none; /* Firefox*/
+}
+
+.chat__message{
+    position: relative;     /*edit the position of the relative inline elements*/
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #262d31;
+    margin-bottom: 23px;
+}
+
+.chat__receiver {
+    margin-left: auto;
+    background-color: #056162;
+}
+
+.chat__timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+
+.chat__name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+
+.chat__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2428;
+    height: 62px;
+    border-top: 0px solid lightgray;
+}
+
+.chat__footer > form {
+    flex: 1;
+    display: flex;
+}
+
+.chat__footer > form > input {
+    flex: 1;
+    background-color: #33383b;
+    border-radius: 30px;
+    padding: 10px;
+    outline-width: 0;
+    border: none;
+    color: lightgray;
+}
+
+.chat__footer ::-webkit-input-placeholder { /* Edge */
+    color: gray;
+}
+  
+.chat__footer ::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+}
+  
+.chat__footer ::placeholder {
+    color: gray;
+}
+
+
+.chat__footer > form > button{
+    display: none;      /*gets rids of the submit button, use enter instead*/
+} 
+
+.chat__footer > .MuiSvgIcon-root {
+    padding: 10px;
+    color: gray;
+}
